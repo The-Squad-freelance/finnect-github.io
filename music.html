@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music & Audio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    </head>
+    <style>
+        .main1{
+            background-image:-webkit-image-set("https://thumb.ac-illust.com/da/da81e88bd4478094eb06b1e5846388c9_t.jpeg");
+            background-size: 1300px 250px;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            text-align: center;
+            height: 230px;
+            width: 1300px;
+            margin: 30px 50px 30px 0px;
+            font-size: larger;
+            padding-top: 30px;
+        }
+        .main2{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           
+        }
+        .main2 a{
+            height: 100px;
+            width:300px;
+            box-shadow: 0 0 8px black;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            margin-top: 20px;
+            font-size: 20px;
+            text-align:center;
+            padding-top: 10px;
+
+           
+        }
+        .main2 a:hover{
+            box-shadow: 0 0 15px black;
+        }
+        .head1{
+            margin-left: 40px;
+        }
+       
+
+         .head2{
+            margin-left: 40px;
+            margin-top: 40px;
+            
+        }
+        .main3{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 60px;
+            margin: 30px 0px 20px 70px;
+
+        }
+        .sub{
+            text-align: center;
+            /* box-shadow: 0 0 2px black;
+            border-radius: 20px; */
+            padding: 15px;
+        }
+        .sub:hover{
+            box-shadow: 0 0 6px black;
+            border-radius: 20px;
+        }
+        .main4{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 60px;
+            margin: 40px 0px 20px 70px;
+
+        }
+        .sub1{
+            text-align: center;
+          /*  box-shadow: 0 0 2px black;
+            border-radius: 20px;*/
+            padding: 15px;
+        }
+        .sub1:hover{
+            box-shadow: 0 0 6px black;
+            border-radius: 20px;
+        }
+        .head4{
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .main5{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 40px;
+            margin: 40px 20px 20px 20px;
+        }
+        .sub2 img{
+            border-radius: 10px;
+        }
+        .sub2 img:hover{
+            box-shadow: 0 0 6px black;
+        }
+        html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+.video-wrapper {
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+  
+  video {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+  }
+}
+    </style>
+    <body>
+       <div class="main1">
+        <h1 style="text-align: center;">Music & Audio</h1>
+        <h2>Don't miss a beat. Bring your sound to life.</h2>
+       </div>
+      
+       
+    <div class="head1">
+        <h1>Most Popular in Music & Audio</h1>
+    </div>
+       
+    <div class="main2">
+        <a href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxGObgxn0jDtCMhRSWbhZCgjtTdJmHwADJFg&s" alt="1" height="80px" width="100px">  Voice Over</a>
+        <a href="#">
+            <img src="data:image/jpeg;base64,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" alt="2" height="80px" width="100px"> Music Producers</a>
+        <a href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhnBSrPfYaInlb26xSEWrPy6enq3nYNXEsdyIiTCgrZJ5CU5O93GTCH-J0ZGIGb51kJ5E&usqp=CAU" alt="3" height="80px" width="100px"> Singers & Vocalists</a>
+        <a href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZb8KVy5qwjYdiAITyUX98yJJrx2Iq8Z6HyIf94azK0_jPGn1rjRRWaN4igEDenJE1Rx4&usqp=CAU" alt="3" height="80px" width="100px">Sound Design</a>    
+    </div>
+
+    
+
+    <div class="head2">
+        <h1>Explore Music & Audio</h1>
+    </div>
+    <div class="main3">
+        <div class="sub">
+            <img  width="200px" height="100px"src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/4a3e5be4c3444c820c64bf49d9b5769b-1681898874126/Music%20Production%20_%20Writing.jpg" alt="img1">
+            <h6>Music Production & Writing </h6>
+            <p>  Music Producers<br>
+                Composers<br>
+                Songwriters<br>
+                Beat Making</p>
+        </div>
+
+        <div class="sub">
+            <img width="200px" height="100px"src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/54b8566acee6fb3d6a492b11cd828825-1682588022028/Audio%20Engineering%20_%20Post-production.png" alt="img2">
+            <h6>Audio Engineering & Post Production</h6>
+            <p>Mixing & Mastering<br>
+                Audio Editing<br>
+                Vocal Tuning</p>
+        </div>
+
+        <div class="sub">
+            <img  width="200px" height="100px"src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/4a3e5be4c3444c820c64bf49d9b5769b-1681898874112/Voice%20Over%20_%20Streaming.jpg" alt="img3">
+            <h6>Voice Over & Streaming</h6>
+            <p>Voice Over<br>
+            Podcast Production<br>
+            Audiobook Production</p>
+        </div>
+    </div>
+
+    <div class="video-wrapper">
+        <video autoplay muted loop playsinline preload="metadata">
+            <source src="./149469-796096114_small.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+
+
+
+
+
+    <div class="main4">
+        <div class="sub1">
+            <img  width="200px" height="100px"src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/4a3e5be4c3444c820c64bf49d9b5769b-1681898874117/Lessons%20_%20Transcription.jpg" alt="img11">
+            <h6>Lessons & Transcription</h6>
+            <p>Online Music Lessons<br>
+                Music Transcription<br>
+                Music & Audio Advice</p>   
+        </div>
+
+        <div class="sub1">
+            <img  width="200px" height="100px" src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/4a3e5be4c3444c820c64bf49d9b5769b-1681898874128/DJing.jpg" alt="img12">
+            <h6>DJing</h6>
+            <p> Remixing<br>
+                DJ Drops & Tags<br>
+                DJ Mixing</p>   
+        </div>
+        <div class="sub1">
+            <img  width="200px" height="100px"src="https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto/v1/attachments/generic_asset/asset/4a3e5be4c3444c820c64bf49d9b5769b-1681898874124/Miscellaneous.jpg" alt="img13">
+            <h6>Sound Design</h6>
+               <p>Custom Patches & Samples <br>
+                Meditation Music</p> 
+                Audio Plugin Development</p> 
+                
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+
+     <div class="head4">
+        <h1>Guides related to Music & Audio</h1>
+     </div>
+
+     <div class="main5">
+        <div class="sub2">
+            <img width="300px" height="320px" src="https://fiverr-res.cloudinary.com/image/upload/w_600/q_auto,f_auto/v1/attachments/generic_asset/asset/5a7a6cd5bf1334301d77c29f8c7cdd43-1599921796181/voice%20over-min.jpg" alt="21">
+            <p><h5>What is voice-over? all you need to know </h5></p>
+        </div>
+        <div class="sub2">
+            <img width="300px" height="320px" src="https://fiverr-res.cloudinary.com/image/upload/w_600/f_auto,q_auto/v1/attachments/generic_asset/asset/787c8ca2c9f545350fb11dd987d69af5-1657113227993/shutterstock_2120380775.jpg" alt="22">
+            <p><h5>How To Become a Songwriter in 2024</h5></p>
+        </div>
+        <div class="sub2">
+            <img width="300px" height="320px" src="https://fiverr-res.cloudinary.com/image/upload/w_600/f_auto,q_auto/v1/attachments/generic_asset/asset/18dab679d0ea68cf6c6430d77c213230-1664872016381/shutterstock_415922566.jpg" alt="23">
+            <p><h5>DJ Drops - Learn To Make Your Own</h5></p>
+        </div>
+     </div>
+     <hr>
+    
+     <h3>© FinNect International Ltd. 2024 </h3>
+
+
+
+    
+    </body>
+</html>
